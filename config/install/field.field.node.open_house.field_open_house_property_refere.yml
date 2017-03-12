@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_house_property_refere
+    - node.type.open_house
+    - node.type.property
+id: node.open_house.field_open_house_property_refere
+field_name: field_open_house_property_refere
+entity_type: node
+bundle: open_house
+label: 'Open House Property Reference'
+description: 'Select the property this open house is for.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      property: property
+    sort:
+      field: title
+      direction: ASC
+field_type: entity_reference

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_county
+    - node.type.property
+    - taxonomy.vocabulary.county
+  content:
+    - 'taxonomy_term:county:c4c0cd48-755f-427a-8700-b07206a9a8cc'
+id: node.property.field_property_county
+field_name: field_property_county
+entity_type: node
+bundle: property
+label: 'Property County'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: c4c0cd48-755f-427a-8700-b07206a9a8cc
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      county: county
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,199 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property.body
+    - field.field.node.property.field_property_address_2
+    - field.field.node.property.field_property_asking_price
+    - field.field.node.property.field_property_city
+    - field.field.node.property.field_property_county
+    - field.field.node.property.field_property_featured
+    - field.field.node.property.field_property_featured_image
+    - field.field.node.property.field_property_geolocation
+    - field.field.node.property.field_property_image_gallery
+    - field.field.node.property.field_property_listed_date
+    - field.field.node.property.field_property_neighborhood
+    - field.field.node.property.field_property_number_bathrooms
+    - field.field.node.property.field_property_number_bedrooms
+    - field.field.node.property.field_property_owners
+    - field.field.node.property.field_property_pdf_listing
+    - field.field.node.property.field_property_realtors
+    - field.field.node.property.field_property_square_footage
+    - field.field.node.property.field_property_state
+    - field.field.node.property.field_property_status
+    - field.field.node.property.field_property_zip
+    - image.style.thumbnail
+    - node.type.property
+  module:
+    - datetime
+    - file
+    - geolocation
+    - image
+    - path
+    - text
+id: node.property.default
+targetEntityType: node
+bundle: property
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_property_address_2:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_property_asking_price:
+    weight: 15
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_property_city:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_property_county:
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_property_featured:
+    weight: 23
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_property_featured_image:
+    weight: 16
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_property_geolocation:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+  field_property_image_gallery:
+    weight: 17
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_property_listed_date:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_property_neighborhood:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_property_number_bathrooms:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_property_number_bedrooms:
+    weight: 20
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_property_owners:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_property_pdf_listing:
+    weight: 25
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_property_realtors:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_property_square_footage:
+    weight: 22
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_property_state:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_property_status:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_property_zip:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

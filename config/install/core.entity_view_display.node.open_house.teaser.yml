@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.open_house.body
+    - field.field.node.open_house.field_open_house_end
+    - field.field.node.open_house.field_open_house_property_refere
+    - field.field.node.open_house.field_open_house_start
+    - node.type.open_house
+  module:
+    - text
+    - user
+id: node.open_house.teaser
+targetEntityType: node
+bundle: open_house
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_open_house_end: true
+  field_open_house_property_refere: true
+  field_open_house_start: true

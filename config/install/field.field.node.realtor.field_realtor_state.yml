@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_realtor_state
+    - node.type.realtor
+id: node.realtor.field_realtor_state
+field_name: field_realtor_state
+entity_type: node
+bundle: realtor
+label: 'Realtor State'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

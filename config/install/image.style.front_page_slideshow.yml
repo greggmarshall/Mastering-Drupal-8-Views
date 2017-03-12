@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: front_page_slideshow
+label: 'Front Page Slideshow'
+effects:
+  98cb30b7-553a-4d32-9b08-08dea74acb2b:
+    uuid: 98cb30b7-553a-4d32-9b08-08dea74acb2b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 400

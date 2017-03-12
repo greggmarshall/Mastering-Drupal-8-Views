@@ -1,0 +1,93 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property_owner.field_owner_address_1
+    - field.field.node.property_owner.field_owner_address_2
+    - field.field.node.property_owner.field_owner_city
+    - field.field.node.property_owner.field_owner_company
+    - field.field.node.property_owner.field_owner_email
+    - field.field.node.property_owner.field_owner_first_name
+    - field.field.node.property_owner.field_owner_last_name
+    - field.field.node.property_owner.field_owner_phone
+    - field.field.node.property_owner.field_owner_state
+    - field.field.node.property_owner.field_owner_zip
+    - node.type.property_owner
+  module:
+    - user
+id: node.property_owner.default
+targetEntityType: node
+bundle: property_owner
+mode: default
+content:
+  field_owner_address_1:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_owner_address_2:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_owner_city:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_owner_company:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_owner_email:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_owner_first_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_owner_last_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_owner_phone:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_owner_state:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_owner_zip:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden: {  }

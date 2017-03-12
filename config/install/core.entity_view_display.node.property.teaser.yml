@@ -1,0 +1,63 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.property.body
+    - field.field.node.property.field_property_address_2
+    - field.field.node.property.field_property_asking_price
+    - field.field.node.property.field_property_city
+    - field.field.node.property.field_property_county
+    - field.field.node.property.field_property_featured
+    - field.field.node.property.field_property_featured_image
+    - field.field.node.property.field_property_geolocation
+    - field.field.node.property.field_property_image_gallery
+    - field.field.node.property.field_property_listed_date
+    - field.field.node.property.field_property_neighborhood
+    - field.field.node.property.field_property_number_bathrooms
+    - field.field.node.property.field_property_number_bedrooms
+    - field.field.node.property.field_property_owners
+    - field.field.node.property.field_property_pdf_listing
+    - field.field.node.property.field_property_realtors
+    - field.field.node.property.field_property_square_footage
+    - field.field.node.property.field_property_state
+    - field.field.node.property.field_property_status
+    - field.field.node.property.field_property_zip
+    - node.type.property
+  module:
+    - text
+    - user
+id: node.property.teaser
+targetEntityType: node
+bundle: property
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_property_address_2: true
+  field_property_asking_price: true
+  field_property_city: true
+  field_property_county: true
+  field_property_featured: true
+  field_property_featured_image: true
+  field_property_geolocation: true
+  field_property_image_gallery: true
+  field_property_listed_date: true
+  field_property_neighborhood: true
+  field_property_number_bathrooms: true
+  field_property_number_bedrooms: true
+  field_property_owners: true
+  field_property_pdf_listing: true
+  field_property_realtors: true
+  field_property_square_footage: true
+  field_property_state: true
+  field_property_status: true
+  field_property_zip: true

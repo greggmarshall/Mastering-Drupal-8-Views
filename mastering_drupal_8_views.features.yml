@@ -1,0 +1,27 @@
+excluded:
+  - views.view.attachment_test
+  - views.view.available_property_listing
+  - views.view.available_property_listing_chapter_2
+  - views.view.available_property_listing_chapter_3
+  - views.view.available_property_listing_chapter_4
+  - views.view.available_property_listing_chapter_6
+  - views.view.content_field_open_house_start_on_calendar
+  - views.view.faq
+  - views.view.featured_properties
+  - views.view.infinite_scroll_property_gallery
+  - views.view.infinite_scroll_property_gallery_with_open_houses
+  - views.view.open_houses
+  - views.view.open_houses_chapter_6
+  - views.view.open_house_quick_view
+  - views.view.property_map
+  - views.view.quick_open_house_display
+  - views.view.to_be_published
+  - views.view.unpublished_properties_per_realtor
+  - views.view.views_slideshow_test
+  - block.block.adminimal_views_block__featured_properties_block_1
+  - block.block.adminimal_views_block__unpublished_properties_per_realtor_block_1
+  - block.block.jethro_views_block__featured_properties_block_1
+  - block.block.jethro_views_block__unpublished_properties_per_realtor_block_1
+  - block.block.views_block__featured_properties_block_1
+  - block.block.views_block__unpublished_properties_per_realtor_block_1
+required: true

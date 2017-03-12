@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.realtor.field_realtor_address_1
+    - field.field.node.realtor.field_realtor_address_2
+    - field.field.node.realtor.field_realtor_city
+    - field.field.node.realtor.field_realtor_company
+    - field.field.node.realtor.field_realtor_email
+    - field.field.node.realtor.field_realtor_first_name
+    - field.field.node.realtor.field_realtor_last_name
+    - field.field.node.realtor.field_realtor_phone
+    - field.field.node.realtor.field_realtor_state
+    - field.field.node.realtor.field_realtor_zip
+    - node.type.realtor
+  module:
+    - user
+id: node.realtor.teaser
+targetEntityType: node
+bundle: realtor
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_realtor_address_1: true
+  field_realtor_address_2: true
+  field_realtor_city: true
+  field_realtor_company: true
+  field_realtor_email: true
+  field_realtor_first_name: true
+  field_realtor_last_name: true
+  field_realtor_phone: true
+  field_realtor_state: true
+  field_realtor_zip: true

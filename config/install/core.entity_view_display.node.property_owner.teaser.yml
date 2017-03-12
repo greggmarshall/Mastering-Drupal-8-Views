@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.property_owner.field_owner_address_1
+    - field.field.node.property_owner.field_owner_address_2
+    - field.field.node.property_owner.field_owner_city
+    - field.field.node.property_owner.field_owner_company
+    - field.field.node.property_owner.field_owner_email
+    - field.field.node.property_owner.field_owner_first_name
+    - field.field.node.property_owner.field_owner_last_name
+    - field.field.node.property_owner.field_owner_phone
+    - field.field.node.property_owner.field_owner_state
+    - field.field.node.property_owner.field_owner_zip
+    - node.type.property_owner
+  module:
+    - user
+id: node.property_owner.teaser
+targetEntityType: node
+bundle: property_owner
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_owner_address_1: true
+  field_owner_address_2: true
+  field_owner_city: true
+  field_owner_company: true
+  field_owner_email: true
+  field_owner_first_name: true
+  field_owner_last_name: true
+  field_owner_phone: true
+  field_owner_state: true
+  field_owner_zip: true

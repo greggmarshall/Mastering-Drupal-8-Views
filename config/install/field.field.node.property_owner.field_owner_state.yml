@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_owner_state
+    - node.type.property_owner
+id: node.property_owner.field_owner_state
+field_name: field_owner_state
+entity_type: node
+bundle: property_owner
+label: 'Owner State'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

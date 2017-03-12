@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.open_house.body
+    - field.field.node.open_house.field_open_house_end
+    - field.field.node.open_house.field_open_house_property_refere
+    - field.field.node.open_house.field_open_house_start
+    - node.type.open_house
+  module:
+    - datetime
+    - text
+    - user
+id: node.open_house.default
+targetEntityType: node
+bundle: open_house
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_open_house_end:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_open_house_property_refere:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_open_house_start:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  links:
+    weight: 100
+hidden: {  }

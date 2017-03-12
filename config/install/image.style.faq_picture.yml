@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: faq_picture
+label: 'FAQ Picture'
+effects:
+  b9c268d8-206f-4066-b100-a263b0d77519:
+    uuid: b9c268d8-206f-4066-b100-a263b0d77519
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1000
+      height: 200

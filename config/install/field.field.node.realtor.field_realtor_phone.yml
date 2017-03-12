@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_realtor_phone
+    - node.type.realtor
+  module:
+    - telephone
+id: node.realtor.field_realtor_phone
+field_name: field_realtor_phone
+entity_type: node
+bundle: realtor
+label: 'Realtor Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

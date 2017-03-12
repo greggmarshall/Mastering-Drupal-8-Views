@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_zip
+    - node.type.property
+id: node.property.field_property_zip
+field_name: field_property_zip
+entity_type: node
+bundle: property
+label: 'Property Zip'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '64014'
+default_value_callback: ''
+settings: {  }
+field_type: string

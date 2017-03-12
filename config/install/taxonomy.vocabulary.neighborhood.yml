@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Neighborhood
+vid: neighborhood
+description: ''
+hierarchy: 0
+weight: 0

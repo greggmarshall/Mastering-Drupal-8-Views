@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq_picture
+    - node.type.faq
+  module:
+    - image
+id: node.faq.field_faq_picture
+field_name: field_faq_picture
+entity_type: node
+bundle: faq
+label: 'FAQ Picture'
+description: 'Add a picture to help answer the question.  It will be displayed in above the text.  It will be resized to be 1000 px wide and 200 px high, if you want to control how your image is cropped, upload an original image of that size.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

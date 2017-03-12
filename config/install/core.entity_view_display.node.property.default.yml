@@ -1,0 +1,192 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property.body
+    - field.field.node.property.field_property_address_2
+    - field.field.node.property.field_property_asking_price
+    - field.field.node.property.field_property_city
+    - field.field.node.property.field_property_county
+    - field.field.node.property.field_property_featured
+    - field.field.node.property.field_property_featured_image
+    - field.field.node.property.field_property_geolocation
+    - field.field.node.property.field_property_image_gallery
+    - field.field.node.property.field_property_listed_date
+    - field.field.node.property.field_property_neighborhood
+    - field.field.node.property.field_property_number_bathrooms
+    - field.field.node.property.field_property_number_bedrooms
+    - field.field.node.property.field_property_owners
+    - field.field.node.property.field_property_pdf_listing
+    - field.field.node.property.field_property_realtors
+    - field.field.node.property.field_property_square_footage
+    - field.field.node.property.field_property_state
+    - field.field.node.property.field_property_status
+    - field.field.node.property.field_property_zip
+    - node.type.property
+  module:
+    - datetime
+    - file
+    - geolocation
+    - image
+    - options
+    - text
+    - user
+id: node.property.default
+targetEntityType: node
+bundle: property
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_property_address_2:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_property_asking_price:
+    weight: 110
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_property_city:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_property_county:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_property_featured:
+    weight: 117
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_property_featured_image:
+    weight: 111
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_property_geolocation:
+    weight: 107
+    label: above
+    settings:
+      type: ROADMAP
+      zoom: 10
+      height: 400px
+      width: 100%
+    third_party_settings: {  }
+    type: geolocation_map
+  field_property_image_gallery:
+    weight: 112
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_property_listed_date:
+    weight: 109
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_property_neighborhood:
+    weight: 118
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_property_number_bathrooms:
+    weight: 116
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_property_number_bedrooms:
+    weight: 115
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_property_owners:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_property_pdf_listing:
+    weight: 119
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_property_realtors:
+    weight: 113
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_property_square_footage:
+    weight: 120
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_property_state:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_property_status:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_property_zip:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,130 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.realtor.field_realtor_address_1
+    - field.field.node.realtor.field_realtor_address_2
+    - field.field.node.realtor.field_realtor_city
+    - field.field.node.realtor.field_realtor_company
+    - field.field.node.realtor.field_realtor_email
+    - field.field.node.realtor.field_realtor_first_name
+    - field.field.node.realtor.field_realtor_last_name
+    - field.field.node.realtor.field_realtor_phone
+    - field.field.node.realtor.field_realtor_state
+    - field.field.node.realtor.field_realtor_zip
+    - node.type.realtor
+  module:
+    - path
+    - telephone
+id: node.realtor.default
+targetEntityType: node
+bundle: realtor
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+  field_realtor_address_1:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_realtor_address_2:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_realtor_city:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_realtor_company:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_realtor_email:
+    weight: 10
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: email_default
+  field_realtor_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_realtor_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_realtor_phone:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  field_realtor_state:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_realtor_zip:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  path:
+    type: path
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 13
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

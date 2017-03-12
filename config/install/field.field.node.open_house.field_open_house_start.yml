@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_house_start
+    - node.type.open_house
+  module:
+    - datetime
+id: node.open_house.field_open_house_start
+field_name: field_open_house_start
+entity_type: node
+bundle: open_house
+label: 'Open House Start'
+description: 'Select the date and time of the Open House start'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

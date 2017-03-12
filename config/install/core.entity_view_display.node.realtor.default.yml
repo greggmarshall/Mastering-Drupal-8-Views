@@ -1,0 +1,93 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.realtor.field_realtor_address_1
+    - field.field.node.realtor.field_realtor_address_2
+    - field.field.node.realtor.field_realtor_city
+    - field.field.node.realtor.field_realtor_company
+    - field.field.node.realtor.field_realtor_email
+    - field.field.node.realtor.field_realtor_first_name
+    - field.field.node.realtor.field_realtor_last_name
+    - field.field.node.realtor.field_realtor_phone
+    - field.field.node.realtor.field_realtor_state
+    - field.field.node.realtor.field_realtor_zip
+    - node.type.realtor
+  module:
+    - user
+id: node.realtor.default
+targetEntityType: node
+bundle: realtor
+mode: default
+content:
+  field_realtor_address_1:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_realtor_address_2:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_realtor_city:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_realtor_company:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_realtor_email:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_realtor_first_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_realtor_last_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_realtor_phone:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_realtor_state:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_realtor_zip:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden: {  }
